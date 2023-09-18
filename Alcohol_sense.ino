@@ -1,14 +1,13 @@
 
 void setup() {
-  pinMode(8,INPUT);
-  pinMode(13,OUTPUT);
+  pinMode(8,INPUT);  //connect alcohol sensor here
+  pinMode(13,OUTPUT); // connect led or buzzer
   digitalWrite(13,LOW);
-  // put your setup code here, to run once:
-
+  
 }
 
 void loop() {
-  int a=digitalRead(8);
+  int a=digitalRead(8);  // read alcohol sensor value
   if(a==0)
   {
     digitalWrite(13,HIGH);
@@ -16,6 +15,5 @@ void loop() {
   else {
     digitalWrite(13,LOW);
   }
-  // put your main code here, to run repeatedly:
-
+ 
 }
